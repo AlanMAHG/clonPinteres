@@ -1,0 +1,99 @@
+body{
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 15px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+header{
+    background-color: #fff;
+    display:flex;
+    height: 8vh;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+
+}
+header nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10vw;
+    
+}
+header nav a{
+    color: black;
+    font-size: .7rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+.headerNavHover:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+#botonInicio{
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+}
+#botonPint{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+#buscador{
+    width: 80vw;
+}
+#cuadroBusqueda{
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: none;
+    height: 73%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    width: 100%;
+}
+#cuadroBusqueda:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+#cuadroBusqueda::placeholder{
+background-image:url(./search.png);
+background-repeat: no-repeat;
+background-size: 15px 15px;
+background-position: left center;
+}
+.menuUser{
+    color:dimgrey;
+    font-weight: bold;
+    font-size: .9rem;
+    margin-bottom: .4rem;
+}
+header nav i,input{
+    margin-right: 5px;
+}
+main{
+    padding-top: 50px;
+}
+.gridContainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 238px);
+    justify-content: center;
+    grid-template-rows: auto;
+    
+}
+.gridItem{
+    cursor: zoom-in;
+    width: 230px;
+    border-radius: 20px;
+}
+.gridItem:hover{
+    filter: contrast(60%);
+    
+}

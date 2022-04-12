@@ -1,0 +1,231 @@
+:root {
+    --card_width: 250px;
+    --card_border_radius: 16px;
+    --row_increment: 10px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+body{
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 15px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+header{
+    background-color: #fff;
+    display:flex;
+    margin-top: 8px;
+    height: 8.5vh;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+
+}
+header nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10vw;
+    
+}
+header nav a{
+    color: black;
+    font-size: .7rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+.headerNavHover:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+#botonInicio{
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+}
+#botonPint{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+#buscador{
+    width: 80vw;
+}
+#cuadroBusqueda{
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border: none;
+    height: 73%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    width: 100%;
+}
+#cuadroBusqueda:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+#cuadroBusqueda::placeholder{
+    background-image:url(./search.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: left center;
+}
+.menuUser{
+    color:dimgrey;
+    font-weight: bold;
+    font-size: .9rem;
+    margin-bottom: .4rem;
+}
+header nav i,input{
+    margin-right: 5px;
+}
+main{
+    padding-top: 50px;
+}
+/* .principalContainer{
+    position: absolute;
+} */
+.gridContainer{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: grid;
+    left: 50%;
+    transform: translatex(-50%);
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    /* grid-auto-rows: var(--row_increment); */
+    justify-content: center;
+    width: 100vw;    
+}
+.gridGallerySmall{
+    padding: 0;
+    margin: 15px 10px;
+    grid-row-end: span var(--card_small);
+    position: relative;
+    z-index: 5;
+}
+.gridGalleryMedium{
+    padding: 0;
+    margin: 15px 10px;
+    grid-row-end: span var(--card_medium);
+    position: relative;
+}
+.gridGallerylarge{
+    padding: 0;
+    margin: 15px 10px;
+    grid-row-end: span var(--card_large);
+    position: relative;
+}
+.gridItem{
+    cursor: zoom-in;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--card_border_radius);
+}
+.gridItem:hover{
+    filter: contrast(60%);
+    
+}
+.menuImage{
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+    position: relative;
+    bottom: 50px;
+    left: 130px;
+    z-index: 10;
+}
+.menuImage a{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 50%;
+    width: 2rem;
+}
+.btnMenuImage{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#ocultar{
+    display: none;
+}
+.menuCelular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: var(--card_border_radius);
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+    /* position: absolute; */
+    position: fixed;
+    left: 30%;
+    right: 15%;
+    bottom: 0;
+}
+#containerMenuCel{
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 10vw;
+}
+.menuCelUser{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 870px) {
+    header{
+        width: 90%;
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 670px) {
+    #buscador{
+        width: 70vw;
+    }
+    #cuadroBusqueda{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 570px) {
+    #buscador{
+        display: none;
+    }
+    #ocultarMenuNav{
+        display: none;
+    }
+    #ocultar{
+        display: inline;
+    }
+}
+@media screen and (max-width: 450px) {
+    .menuCelular{
+        left: 15%;
+        right: 15%;
+    }
+    #containerMenuCel{
+        padding-left: 80px;
+    }
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <title>Pinterest 2</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="botonPint" href="#"><i id="logo" class="fa fa-pinterest" aria-hidden="true"></i></a>
+            <a id="botonInicio" href="#">inicio</a>
+            <a class="headerNavHover" href="#">Hoy</a>
+        </nav>
+        <nav id="buscador">
+            <input id="cuadroBusqueda" type="text" placeholder="    Buscar">
+        </nav>
+        <nav>
+            <a class="headerNavHover menuUser" href="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+            <a class="headerNavHover menuUser" href="">
+                <i class="fa fa-commenting" aria-hidden="true"></i>
+            </a>
+            <a class="headerNavHover menuUser" href="">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a class="headerNavHover menuUser" href="">
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </header>
+    <main class="gridContainer">
+        <img class="gridItem" src="IMG/im1.jfif" alt="">
+        <img class="gridItem" src="IMG/im2.jfif" alt="">
+        <img class="gridItem" src="IMG/im3.jfif" alt="">
+        <img class="gridItem" src="IMG/im4.jfif" alt="">
+        <img class="gridItem" src="IMG/im5.jfif" alt="">
+        <img class="gridItem" src="IMG/im6.jfif" alt="">
+        <img class="gridItem" src="IMG/im7.jfif" alt="">
+        <img class="gridItem" src="IMG/im8.jfif" alt="">
+        <img class="gridItem" src="IMG/im9.jfif" alt="">
+        <img class="gridItem" src="IMG/im10.jfif" alt="">
+        <img class="gridItem" src="IMG/im11.jfif" alt="">
+        <img class="gridItem" src="IMG/im12.jfif" alt="">
+        <img class="gridItem" src="IMG/im13.jfif" alt="">
+    </main>
+</body>
+</html>
